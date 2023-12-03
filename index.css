@@ -1,0 +1,92 @@
+/* VARIABLES */
+
+:root {
+	--font: "Love Ya Like A Sister", cursive;
+	--color-1: #c4fff9;
+	--color-2: #9ceaef;
+	--color-3: #68d8d6;
+	--color-4: #3dccc7;
+	--color-5: #07beb8;
+}
+
+/* RESET */
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+	font-family: var(--font);
+	background: url(https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	min-height: 100vh;
+}
+
+/* CANDY CALCULATOR */
+
+.candy-calc {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 400px;
+	margin: 1em;
+	padding: 2em;
+	background-color: rgba(245, 245, 245, 0.9);
+	border: 2px solid var(--color-5);
+	border-radius: 5px;
+}
+
+.candy-calc__title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.candy-calc__label,
+.candy-calc__candy-num,
+.candy-calc__children-num {
+	margin-bottom: 1em;
+}
+
+.candy-calc__candy-num,
+.candy-calc__children-num,
+.candy-calc__button {
+	font-size: 1.4rem;
+	border: 2px solid var(--color-5);
+	font-family: var(--font);
+	border-radius: 5px;
+}
+
+.candy-calc__button {
+	background: var(--color-1);
+}
+
+.candy-calc__button:hover,
+.candy-calc__button:active {
+	cursor: pointer;
+	background: var(--color-2);
+}
+
+.candy-calc__num {
+	font-size: 1.4rem;
+	font-family: var(--font);
+	color: var(--color-5);
+	padding: 1em;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 400px) {
+	.candy-calc {
+		transform: scale(80%);
+	}
+}
